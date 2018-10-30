@@ -2,6 +2,12 @@ const express = require('express');
 const port = process.env.PORT || 8080;
 const app = express();
 
+const cors = require('cors');
+const options = {
+  origin: 'http://localhost:3000'
+}
+app.use(cors(options));
+
 // app.use(express.static(__dirname + '/dist/'));
 // app.get(/.*/, function (req, res) {
 //   res.sendFile(__dirname + '/dist/index.html');
@@ -13,19 +19,19 @@ app.get('/api/store', function(req, res) {
       _id: 0,
       category: 'JavaScript',
       remaining: 4,
-      imageUrl: 'https://via.placeholder.com/80x80'
+      imageUrl: 'https://source.unsplash.com/collection/2270935'
     },
     {
       _id: 1,
       category: 'Python',
       remaining: 2,
-      imageUrl: 'https://via.placeholder.com/80x80'
+      imageUrl: 'https://source.unsplash.com/collection/2737036'
     },
     {
       _id: 2,
       category: 'Ruby',
       remaining: 6,
-      imageUrl: 'https://via.placeholder.com/80x80'
+      imageUrl: 'https://source.unsplash.com/collection/1144691'
     }
   ]
   
