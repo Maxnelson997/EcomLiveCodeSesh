@@ -2,7 +2,14 @@ import React, { Component } from 'react';
 
 import { connect } from 'react-redux';
 
+import { fetchStickers } from '../actions';
+
 class App extends Component {
+
+  componentDidMount() {
+    this.props.fetchStickers()
+  }
+
   render() {
     return (
       <div className='app'>
@@ -29,6 +36,6 @@ function mapStateToProps(state) {
   }
 }
 
-App = connect(mapStateToProps)(App);
+App = connect(mapStateToProps, { fetchStickers })(App);
 
 export default App;
