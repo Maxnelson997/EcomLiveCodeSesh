@@ -19,19 +19,25 @@ app.get('/api/store', function(req, res) {
       _id: 0,
       category: 'JavaScript',
       remaining: 4,
-      imageUrl: 'https://source.unsplash.com/collection/2270935'
+      imageUrl: 'https://source.unsplash.com/collection/2270935',
+      title: 'JavaScript in the Browser',
+      description: "The FitnessGram™ Pacer Test is a multistage aerobic capacity test that progressively gets more difficult as it continues. The 20 meter pacer test will begin in 30 seconds. ... The running speed starts slowly, but gets faster each minute after you hear this signal."
     },
     {
       _id: 1,
       category: 'Python',
       remaining: 2,
-      imageUrl: 'https://source.unsplash.com/collection/2737036'
+      imageUrl: 'https://source.unsplash.com/collection/2737036',
+      title: 'Slithery Snakes Boi',
+      description: "The FitnessGram™ Pacer Test is a multistage aerobic capacity test that progressively gets more difficult as it continues. The 20 meter pacer test will begin in 30 seconds. ... The running speed starts slowly, but gets faster each minute after you hear this signal."
     },
     {
       _id: 2,
       category: 'Ruby',
       remaining: 6,
-      imageUrl: 'https://source.unsplash.com/collection/1144691'
+      imageUrl: 'https://source.unsplash.com/collection/1144691',
+      title: 'Object Oriented Programming in Ruby',
+      description: "The FitnessGram™ Pacer Test is a multistage aerobic capacity test that progressively gets more difficult as it continues. The 20 meter pacer test will begin in 30 seconds. ... The running speed starts slowly, but gets faster each minute after you hear this signal."
     }
   ]
   

@@ -12,7 +12,12 @@ class Card extends Component {
                     <div>Category: {sticker.category}</div>
                 </div>
                 <div className='sticker__back'>
-                    dis the back boi.
+                    <div className='sticker__back__title'>
+                        {sticker.title}
+                    </div>
+                    <div className='sticker__back__description'>
+                        {sticker.description}
+                    </div>
                 </div>
             </div>
         )
