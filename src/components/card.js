@@ -5,10 +5,15 @@ class Card extends Component {
         const sticker = this.props;
         return (
             <div className='sticker'>
-                <div className='sticker__image-container'>
-                    <img src={sticker.imageUrl}/>
+                <div className='sticker__front'>
+                    <div className='sticker__front__image-container'>
+                        <img src={sticker.imageUrl}/>
+                    </div>
+                    <div>Category: {sticker.category}</div>
                 </div>
-                <div>Category: {sticker.category}</div>
+                <div className='sticker__back'>
+                    dis the back boi.
+                </div>
             </div>
         )
     }
